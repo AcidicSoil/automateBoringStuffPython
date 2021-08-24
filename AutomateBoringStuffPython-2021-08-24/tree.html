@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<style>
+.node
+{
+    padding-left: 20px;
+    display: block;
+}
+
+.node_collapsed
+{
+    padding-left: 20px;
+    display: none;
+
+    
+    visibility: hidden;
+    display: none;
+}
+
+
+
+a:active
+{
+text-decoration:none;
+color: #0000FF;
+font-weight: bold;
+}
+
+a:visited
+{
+text-decoration:none;
+color: #000;
+font-weight: bold;
+}
+
+a:link
+{
+text-decoration:none;
+color: #000;
+font-weight: bold;
+}
+
+a:hover
+{
+text-decoration: underline;
+color: #500;
+font-weight: bold;
+}
+
+</style>
+
+
+<script language="javascript">
+  
+    var displayStates = [];
+
+    function showDiv(div)
+    {    
+        div.style.height     = "";
+        div.style.display    = "block";
+        div.style.visibility = "visible";
+    }
+
+    function hideDiv(div)
+    {
+        div.style.height     = "0px";
+        div.style.display    = "none";      
+        div.style.visibility = "hidden";
+    }
+
+    function toggleDiv(div, defaultState)
+    {
+
+        // set default on first use
+        if (displayStates[div] == undefined)
+            displayStates[div] = defaultState;
+
+        // toggle state
+        displayStates[div] = !displayStates[div];       
+
+        // hide / show
+        if (displayStates[div])
+            showDiv(div);
+        else {
+            hideDiv(div);
+        }
+    }
+
+    function toggleDivName(divname, defaultState)
+    {
+        toggleDiv(document.getElementById(divname), defaultState);
+    }
+
+</script>
+
+<nobr><tt><a href='javascript: toggleDivName("f93e18a6-1cd3-4536-b8f5-2dd480b64263", true)'>+</a>&nbsp;</tt>AutomateBoringStuffPython</nobr><br/>
+<div id='f93e18a6-1cd3-4536-b8f5-2dd480b64263' class='node'><nobr><tt><a href='javascript: toggleDivName("b435054d-80b8-4e98-b698-6608a4e82bb4", true)'>+</a>&nbsp;</tt>while loops</nobr><br/>
+<div id='b435054d-80b8-4e98-b698-6608a4e82bb4' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='while%20loops%202/break/page.html' target='viewer'>break</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='while%20loops%202/continue/page.html' target='viewer'>continue </a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("427eca6e-725d-45d5-9195-caac1e5359ed", true)'>+</a>&nbsp;</tt>for loops</nobr><br/>
+<div id='427eca6e-725d-45d5-9195-caac1e5359ed' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='for%20loops/range/page.html' target='viewer'>range</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("1510e02b-29b7-4182-b12d-413838103dc2", true)'>+</a>&nbsp;</tt>functions</nobr><br/>
+<div id='1510e02b-29b7-4182-b12d-413838103dc2' class='node'><nobr><tt>&nbsp;&nbsp;</tt><a href='functions/built-in%20functions/page.html' target='viewer'>Built-in Functions</a></nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt><a href='functions/pyperclip/page.html' target='viewer'>pyperclip</a></nobr><br/>
+</div>
+<nobr><tt><a href='javascript: toggleDivName("653a7c70-9fb4-4da9-9483-ebef36657cd6", false)'>+</a>&nbsp;</tt><a href='trash' target='viewer'>Trash</a></nobr><br/>
+<div id='653a7c70-9fb4-4da9-9483-ebef36657cd6' class='node_collapsed'><nobr><tt>&nbsp;&nbsp;</tt>New Folder</nobr><br/>
+<nobr><tt>&nbsp;&nbsp;</tt>New Folder</nobr><br/>
+</div>
+</div>
+</body></html>

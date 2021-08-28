@@ -34,3 +34,4 @@ print(partRegex.findall(
     stories[len(testUrl)]))
 #use the link below like the mapit exercise and the last part will be sn
 #https: // partsurfer.hp.com/Search.aspx?searchText = 8cg7222dcd
+#https://realpython.com/beautiful-soup-web-scraper-python/
